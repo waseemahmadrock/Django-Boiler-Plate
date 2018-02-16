@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+<!-- BootStarp CDN -->
+{% block head %}
+<title>Profile</title>
+{% endblock %} {% block body %}
+<div class="container">
+    <div class="jumbotron">
+
+        <h1>Profile Page</h1>
+        <p>Username:
+            <i>{{user}}</i>
+        </p>
+        <p>First Name:
+            <strong>{{user.first_name}}</strong>
+        </p>
+        <p>Last Name:
+            <strong>{{user.last_name}}</strong>
+        </p>
+        <p>Email Addr:
+            <h4>  <i>{{user.email}}</i></h4>
+        </p>
+
+
+    </div>
+</div>
+
+{% endblock %}

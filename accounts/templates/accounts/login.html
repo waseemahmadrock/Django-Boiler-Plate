@@ -1,0 +1,22 @@
+ {% extends 'base.html' %}
+ 
+ {% block head %} 
+ 
+    <title>Login</title>
+ {% endblock %}
+ 
+
+ {% block body %}
+ <div class="container">
+     <div class="jumbotron">
+            <h1>Welcome </h1>
+             <h3>You can login here</h3>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success large" type='submit'>login</button>
+        </form>
+    </div>
+</div>
+ 
+ {% endblock %}
